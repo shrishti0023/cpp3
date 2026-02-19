@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, r, n;
+
+    cout << "Enter first term, ratio and terms: ";
+    cin >> a >> r >> n;
+
+    int term = a;
+
+    for(int i = 1; i <= n; i++) {
+        cout << term << " ";
+        term *= r;
+    }
+
+    return 0;
+}
